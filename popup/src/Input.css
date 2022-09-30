@@ -1,0 +1,32 @@
+.wrapper{
+    background-color: bisque;
+    width: 500px;
+    position: relative;
+}
+
+
+
+.addbtn{
+    width: 50px;
+    height: 28px;
+    position: absolute;
+   bottom: 0%;
+   right: 4%;
+    border: none;
+    border-radius: 10px;
+}
+
+.deletebtn{
+    border: none;
+    border-radius: 5px;
+}
+
+.inputfeild{
+    position: relative;
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+
+}

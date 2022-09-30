@@ -1,0 +1,65 @@
+.windoww{ 
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  /* z-index: 1; */
+  /* display: none; */
+}
+
+.content{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%) scale(0); */
+  transform: translate(-50%, -50%);
+  width: 200px;
+  text-align: center;
+  background-color: cadetblue;
+  /* z-index: 2; */
+}
+
+.active .windoww{
+  display: block;
+}
+
+.active .content{
+  transition: all 300ms ease-in-out;
+  /* transform: translate(-50%, -50%) scale(1); */
+}
+
+.closebtn{
+  cursor: pointer;
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  }
+  @keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  } 
+

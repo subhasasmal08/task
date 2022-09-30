@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: arial;
+  src: url(../src/assests/fonts/Arimo-Bold.ttf);
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../src/assests/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: cairo;
+  src: url(../src/assests/fonts/Cairo-Regular.ttf);
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url("../src/assests/fonts/Montserrat-Regular.ttf");
+}
+
+$desk: 100 / 1920;
+
+.container {
+  width: 100%;
+  height: 100vh;
+
+  .navbar {
+    margin-bottom: 61 * $desk + vw;
+    position: relative;
+    box-shadow: 0 * $desk + vw 2 * $desk + vw 24 * $desk + vw #00000014;
+    padding: 12 * $desk + vw;
+    font-family: montserrat;
+    font-size: 20 * $desk + vw;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #6f96aa;
+    z-index: 1;
+
+    .poweroffimg {
+      width: 18 * $desk + vw;
+      position: absolute;
+      top: 31%;
+      right: 17%;
+    }
+    .userimg {
+      width: 51 * $desk + vw;
+      position: absolute;
+      top: 21%;
+      right: 11%;
+    }
+    .username {
+      position: absolute;
+      right: 3%;
+      top: 10%;
+      color: black;
+      font-family: cairo;
+    }
+
+    .admin {
+      position: absolute;
+      right: 5%;
+      top: 40%;
+      color: #4b40d7;
+      font-family: cairo;
+    }
+  }
+
+  .subcontainer {
+    width: 1496 * $desk + vw;
+    margin-left: 365 * $desk + vw;
+    margin-top: 192 * $desk + vw;
+    border-color: #e7e7e7;
+    color: #283e92;
+    font-size: 23 * $desk + vw;
+    font-family: poppins;
+    position: relative;
+
+    
+    .brightnessimg {
+      width: 18 * $desk + vw;
+      position: absolute;
+      top: 14%;
+      right: 16%;
+    }
+  }
+}
+
+.wrapper {
+  padding: 47.5 * $desk + vw 205 * $desk + vw 17 * $desk + vw 130.5 * $desk + vw;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  margin-top: 25.5 * $desk + vw;
+  margin-right: 62 * $desk + vw;
+
+  .cap1img {
+    width: 95 * $desk + vw;
+    position: absolute;
+    bottom: 84%;
+    left: 21%;
+  }
+
+  .cap2img {
+    width: 95 * $desk + vw;
+    position: absolute;
+    bottom: 84%;
+    right: 21%;
+  }
+
+  .button1,
+  .button2,
+  .button3 {
+    font-size: 13 * $desk + vw;
+    background-color: #283e92;
+    color: #ffffff;
+    width: 153 * $desk + vw;
+    height: 43 * $desk + vw;
+    border: none;
+    border-radius: 20 * $desk + vw;
+    border-color: #e7e7e7;
+    font-family: poppins;
+    margin-top: 25 * $desk + vw;
+  }
+
+  .button2 {
+    width: 166 * $desk + vw;
+    height: 31 * $desk + vw;
+    margin-top: 24 * $desk + vw;
+    margin-bottom: 39 * $desk + vw;
+    border-radius: 10 * $desk + vw;
+  }
+
+  .button3 {
+    width: 166 * $desk + vw;
+    height: 31 * $desk + vw;
+    margin-top: 24 * $desk + vw;
+    margin-bottom: 39 * $desk + vw;
+    border-radius: 10 * $desk + vw;
+  }
+
+  .wrapper1 {
+    display: flex;
+    padding: 60 * $desk + vw 0 50 * $desk + vw 0;
+
+    .wrapper1a {
+      margin-right: 93 * $desk + vw;
+      font-family: arial;
+
+      .para1 {
+        font-size: 14 * $desk + vw;
+        color: #283e92;
+        line-height: 28 * $desk + vw;
+      }
+    }
+
+    .wrapper1b {
+      .peopleimg {
+        width: 502 * $desk + vw;
+        height: 285 * $desk + vh;
+      }
+    }
+  }
+  .wrapper2 {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 139 * $desk + vw;
+
+    .para2,
+    .para3 {
+      font-size: 14 * $desk + vw;
+      color: #6f96aa;
+      font-family: cairo;
+      line-height: 19 * $desk + vw;
+    }
+
+    .wrapper2a,
+    .wrapper2b {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 450 * $desk + vw;
+      text-align: center;
+      font-size: 18 * $desk + vw;
+      font-family: poppins;
+      background-color: #ffffff;
+      box-shadow: 0px 16px 50px #4e7d961a;
+      font-weight: bold;
+      padding: 62 * $desk + vw 38 * $desk + vw 62 * $desk + vw 38 * $desk + vw;
+      border-radius: 15 * $desk + vw;
+    }
+  }
+}
