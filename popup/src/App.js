@@ -1,17 +1,22 @@
 import { useState } from "react";
 import "./App.css";
+import Card from "./Card";
 
 function App() {
   const [Popup, setPopup] = useState(false);
+  const [Demo, setDemo] =useState(true);
   const [Namee, setNamee] = useState(" ");
+  const [subhaa, setSubhaa] = useState("");
+ 
   let arr = [
-    { Name: "Shubham", Age: 22 },
-    { Name: "Subha", Age: 21 },
-    {Name: "ruhi", Age: 11}
+    { Name: "Shubham", Desc: 24 },
+    { Name: "Subha", Desc: 21 },
+    { Name: "ruhi", Desc: 1 },
+    { Name: "janvi", Desc: 25 },
   ];
 
   const getName = (name) => {
-    console.log(name[1].Name)
+    console.log(name[1].Name);
     setNamee(name[0].Age);
   };
 
@@ -31,13 +36,40 @@ function App() {
         </div>
       </div>} */}
       {/* <button onClick={() => {getName("subha")} }> popup </button> */}
-      <button onClick={() => getName(arr)}> Name </button>
-
+      {/* <button onClick={() => getName(arr)}> Name </button> */}
 
       {/* <p> {arr.map((x) => x.Name+" ")}</p> */}
-      <p> {arr.map((x) => x.Name === "Subha" || x.Name === "ruhi" ? x.Age+" " : "")}</p>
+      {/* <p> {arr.map((x) => x.Name === "Subha" || x.Name === "ruhi" ? x.Age+" " : "")}</p> */}
+      {
+        arr.map((x) => (
+          <div>
+            <Card
+              name={subhaa}
+              setsubha= {setSubhaa}
+              // setsubha={(data)=>console.log(data)}
+              description={x.Desc}
+              onclick={() => {
+                document.getElementById("spanname").style.color = "red";
+               
+              }}
+              Popup={Popup}
+              setvalue={setPopup}
+              setdemoo={setDemo}
+              object={arr}
+            />
+            {Popup  &&<p>Done</p>}
+            {Demo &&<p>Second</p>}
 
+          </div>
+        ))}
 
+      {/* // <Card */}
+      {/* //   name="shubham"
+      //   description="dicam"
+      //   onclick={() => */}
+      {/* //     (document.getElementById("spanname").style.color = "red")
+      //   }
+      // /> */}
     </div>
   );
 }

@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Table from './Table';
 import Input from './Input';
+import File from './File';
+import Card from './Card';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Input/>
+    <App/>
   </React.StrictMode>
 );
 

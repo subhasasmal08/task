@@ -51,7 +51,7 @@ export default function Input() {
             setnewArr(_arr);
           }}
         >
-          &#43;
+         +
         </button>
       </div>
     </div>
