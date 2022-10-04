@@ -5,6 +5,7 @@ import Card from "./Card";
 function App() {
   const [Popup, setPopup] = useState(false);
   const [Demo, setDemo] =useState(true);
+  const [pink, setpink] = useState("pink")
   const [Namee, setNamee] = useState(" ");
   const [subhaa, setSubhaa] = useState("");
  
@@ -45,20 +46,24 @@ function App() {
           <div>
             <Card
               name={subhaa}
-              setsubha= {setSubhaa}
+              ssubha= {setSubhaa}
               // setsubha={(data)=>console.log(data)}
               description={x.Desc}
               onclick={() => {
                 document.getElementById("spanname").style.color = "red";
+                document.getElementById("spandesc").style.border= "1px solid red";
                
               }}
               Popup={Popup}
               setvalue={setPopup}
               setdemoo={setDemo}
+              Pink={setpink}
               object={arr}
             />
-            {Popup  &&<p>Done</p>}
-            {Demo &&<p>Second</p>}
+            <Card Arr = {arr.filter((data) => data.Name === "ruhi")}/>
+            {Popup  &&<p>Done</p> }
+            {Demo &&  <p>Second</p>}
+           
 
           </div>
         ))}

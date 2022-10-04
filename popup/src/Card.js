@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Card({ name, description, onclick, setvalue, setdemoo, Popup, object, setsubha }) {
+export default function Card({ name, description, onclick, setvalue, setdemoo, Popup, object, ssubha, Pink }) {
   return (
     <div>
       <div>
@@ -8,7 +8,7 @@ export default function Card({ name, description, onclick, setvalue, setdemoo, P
           Name: <span id="spanname"> {name}</span>
         </h4>
         <p>
-          DESCRIPTION : <span>{description}</span>
+          DESCRIPTION : <span id="spandesc">{description}</span>
         </p>
       </div>
       <div>
@@ -17,7 +17,8 @@ export default function Card({ name, description, onclick, setvalue, setdemoo, P
             onclick();
             setvalue(true);
             setdemoo(false);
-            setsubha("subha");
+            ssubha("subha");
+            Pink();
           }}
         >
           SUBMIT
